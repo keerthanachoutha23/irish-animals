@@ -9,7 +9,7 @@
    - Summary report
 --------------------------------------------------*/
 
-/* mport the dataset */
+/* Import the dataset */
 PROC IMPORT DATAFILE="\\apporto.com\dfs\CLT\Users\kchoutha_clt\Downloads\irish_animals.csv"
     OUT=irish_animals
     DBMS=CSV
