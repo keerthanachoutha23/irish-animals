@@ -1,5 +1,5 @@
 /*--------------------------------------------------
-   ?? Irish Animals Data Analysis (SAS)
+   Irish Animals Data Analysis (SAS)
    - Import dataset
    - Data cleaning and summary statistics
    - Population analysis
@@ -9,7 +9,7 @@
    - Summary report
 --------------------------------------------------*/
 
-/* ?? STEP 1: Import the dataset */
+/* mport the dataset */
 PROC IMPORT DATAFILE="\\apporto.com\dfs\CLT\Users\kchoutha_clt\Downloads\irish_animals.csv"
     OUT=irish_animals
     DBMS=CSV
@@ -17,17 +17,17 @@ PROC IMPORT DATAFILE="\\apporto.com\dfs\CLT\Users\kchoutha_clt\Downloads\irish_a
     GUESSINGROWS=MAX;
 RUN;
 
-/* ?? STEP 2: View first few rows of the dataset */
+/* View first few rows of the dataset */
 PROC PRINT DATA=irish_animals (OBS=5);
     TITLE "First 5 Rows of Irish Animals Dataset";
 RUN;
 
-/* ?? STEP 3: Check for missing values */
+/* STEP 3: Check for missing values */
 PROC MEANS DATA=irish_animals N NMISS;
     TITLE "Missing Values Count in Irish Animals Dataset";
 RUN;
 
-/* ?? STEP 4: Basic Summary Statistics */
+/* STEP 4: Basic Summary Statistics */
 PROC MEANS DATA=irish_animals MEAN MIN MAX STD;
     VAR Population Size__min_cm_ Size__max_cm_ Weight__min_kg_ Weight__max_kg_
         Lifespan__min_years_ Lifespan__max_years_;
@@ -35,7 +35,7 @@ PROC MEANS DATA=irish_animals MEAN MIN MAX STD;
 RUN;
 
 /*--------------------------------------------------
-    ?? ANALYSIS 1: Top 5 Most and Least Populated Animals
+ANALYSIS 1: Top 5 Most and Least Populated Animals
 --------------------------------------------------*/
 /* Sort dataset by Population in descending order */
 PROC SORT DATA=irish_animals OUT=sorted_population;
@@ -58,7 +58,7 @@ PROC PRINT DATA=sorted_population_asc (OBS=5);
 RUN;
 
 /*--------------------------------------------------
-    ?? ANALYSIS 2: Largest and Smallest Animals
+ANALYSIS 2: Largest and Smallest Animals
 --------------------------------------------------*/
 /* Sort dataset by max size */
 PROC SORT DATA=irish_animals OUT=sorted_size;
@@ -81,7 +81,7 @@ PROC PRINT DATA=sorted_size_smallest (OBS=5);
 RUN;
 
 /*--------------------------------------------------
-    ?? ANALYSIS 3: Relationship Between Size & Weight
+   ANALYSIS 3: Relationship Between Size & Weight
 --------------------------------------------------*/
 /* Find correlation between Size and Weight */
 PROC CORR DATA=irish_animals;
@@ -90,29 +90,29 @@ PROC CORR DATA=irish_animals;
 RUN;
 
 /*--------------------------------------------------
-    ?? VISUALIZATIONS
+   VISUALIZATIONS
 --------------------------------------------------*/
 
-/* ?? Histogram: Population Distribution */
+/* Histogram: Population Distribution */
 PROC SGPLOT DATA=irish_animals;
     HISTOGRAM Population;
     TITLE "Distribution of Animal Populations in Ireland";
 RUN;
 
-/* ?? Scatter Plot: Size vs Weight */
+/* Scatter Plot: Size vs Weight */
 PROC SGPLOT DATA=irish_animals;
     SCATTER X=Size__max_cm_ Y=Weight__max_kg_;
     TITLE "Size vs. Weight of Irish Animals";
 RUN;
 
-/* ?? Bar Chart: Lifespan of Animals */
+/* Bar Chart: Lifespan of Animals */
 PROC SGPLOT DATA=irish_animals;
     VBAR Name / RESPONSE=Lifespan__max_years_;
     TITLE "Maximum Lifespan of Irish Animals";
 RUN;
 
 /*--------------------------------------------------
-    ?? FINAL SUMMARY REPORT
+   FINAL SUMMARY REPORT
 --------------------------------------------------*/
 PROC REPORT DATA=irish_animals NOWD;
     COLUMN Name Population Size__max_cm_ Weight__max_kg_ Lifespan__max_years_;
