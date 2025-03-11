@@ -37,7 +37,7 @@ This report summarizes key findings from my SAS analysis of the **Irish Animals 
 ---
 
 ## Size and Weight Analysis
-### **🦢 Largest Animals (by Maximum Size)**
+### ** Largest Animals (by Maximum Size)**
 | Rank | Animal           | Max Size (cm) |
 |------|-----------------|---------------|
 | 1    | **Whooper Swan** | 175           |
@@ -48,7 +48,7 @@ This report summarizes key findings from my SAS analysis of the **Irish Animals 
 
 ➡️ **The Whooper Swan is the largest animal**, while the **Golden Eagle is the largest bird.**
 
-### **🐭 Smallest Animals (by Minimum Size)**
+### ** Smallest Animals (by Minimum Size)**
 | Rank | Animal               | Min Size (cm) |
 |------|----------------------|---------------|
 | 1    | **Irish Pygmy Shrew** | 4.2           |
@@ -59,7 +59,7 @@ This report summarizes key findings from my SAS analysis of the **Irish Animals 
 
 ➡️ **The Irish Pygmy Shrew is the smallest, measuring just 4.2 cm.**
 
-### **⚖Heaviest Animals (by Max Weight)**
+### **Heaviest Animals (by Max Weight)**
 | Rank | Animal      | Max Weight (kg) |
 |------|------------|----------------|
 | 1    | **Red Deer**  | 205            |
@@ -83,7 +83,7 @@ This report summarizes key findings from my SAS analysis of the **Irish Animals 
 
 ---
 
-## 4️⃣ Lifespan Analysis
+## Lifespan Analysis
 ### **Longest-Living Animals**
 | Rank | Animal             | Max Lifespan (Years) |
 |------|--------------------|----------------------|
