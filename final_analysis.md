@@ -1,4 +1,4 @@
-# 🦊 Final Analysis: Irish Animals Dataset (SAS)
+# Final Analysis: Irish Animals Dataset (SAS)
 
 This report summarizes key findings from my SAS analysis of the **Irish Animals dataset**. The dataset contains **10 different animal species** and includes details such as **population size, body size, weight, and lifespan**.
 
