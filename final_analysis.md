@@ -1,18 +1,18 @@
 # 🦊 Final Analysis: Irish Animals Dataset (SAS)
 
-This report summarizes key findings from our SAS analysis of the **Irish Animals dataset**. The dataset contains **10 different animal species** and includes details such as **population size, body size, weight, and lifespan**.
+This report summarizes key findings from my SAS analysis of the **Irish Animals dataset**. The dataset contains **10 different animal species** and includes details such as **population size, body size, weight, and lifespan**.
 
 ---
 
-## 📊 1️⃣ Data Overview
+## Data Overview
 - **Total Species Analyzed**: 10
 - **No missing values** detected in any variable.
 - **Key attributes**: Population, Size (cm), Weight (kg), Lifespan (years).
 
 ---
 
-## 🏆 2️⃣ Population Analysis
-### **🐭 Most Populated Animals**
+## Population Analysis
+### **Most Populated Animals**
 | Rank | Animal               | Population  |
 |------|----------------------|------------|
 | 1    | **Irish Pygmy Shrew** | 5,500,000  |
@@ -23,7 +23,7 @@ This report summarizes key findings from our SAS analysis of the **Irish Animals
 
 ➡️ **The Irish Pygmy Shrew dominates in numbers**, while the **Irish Otter has the lowest population among the top five.**
 
-### **🦅 Least Populated Animals**
+### ** Least Populated Animals**
 | Rank | Animal               | Population  |
 |------|----------------------|------------|
 | 1    | **Golden Eagle**      | 20         |
@@ -36,7 +36,7 @@ This report summarizes key findings from our SAS analysis of the **Irish Animals
 
 ---
 
-## 📏 3️⃣ Size and Weight Analysis
+## Size and Weight Analysis
 ### **🦢 Largest Animals (by Maximum Size)**
 | Rank | Animal           | Max Size (cm) |
 |------|-----------------|---------------|
@@ -59,7 +59,7 @@ This report summarizes key findings from our SAS analysis of the **Irish Animals
 
 ➡️ **The Irish Pygmy Shrew is the smallest, measuring just 4.2 cm.**
 
-### **⚖️ Heaviest Animals (by Max Weight)**
+### **⚖Heaviest Animals (by Max Weight)**
 | Rank | Animal      | Max Weight (kg) |
 |------|------------|----------------|
 | 1    | **Red Deer**  | 205            |
@@ -70,7 +70,7 @@ This report summarizes key findings from our SAS analysis of the **Irish Animals
 
 ➡️ **The Red Deer is the heaviest animal, weighing up to 205 kg!**
 
-### **🐁 Lightest Animals**
+### **Lightest Animals**
 | Rank | Animal               | Max Weight (kg) |
 |------|----------------------|----------------|
 | 1    | **Irish Pygmy Shrew** | 0.0065        |
@@ -83,7 +83,7 @@ This report summarizes key findings from our SAS analysis of the **Irish Animals
 
 ---
 
-## ⏳ 4️⃣ Lifespan Analysis
+## 4️⃣ Lifespan Analysis
 ### **Longest-Living Animals**
 | Rank | Animal             | Max Lifespan (Years) |
 |------|--------------------|----------------------|
@@ -108,7 +108,7 @@ This report summarizes key findings from our SAS analysis of the **Irish Animals
 
 ---
 
-## 📈 5️⃣ Correlation Between Size and Weight
+## Correlation Between Size and Weight
 - **Pearson correlation coefficient: `0.56559`**
 - **p-value: `0.0884`**
 
@@ -116,33 +116,9 @@ This report summarizes key findings from our SAS analysis of the **Irish Animals
 
 ---
 
-## 🏁 Conclusion
+## Conclusion
 - **The Irish Pygmy Shrew dominates in population but has the shortest lifespan.**
 - **Golden Eagles live the longest, up to 32 years.**
 - **The Whooper Swan and Red Deer are the largest animals**, while the **Pygmy Shrew is the smallest.**
 - **The Red Deer is the heaviest animal, while the Pygmy Shrew is the lightest.**
 - **Size and weight are moderately correlated, but not statistically significant.**
-
----
-
-## 🚀 Next Steps
-- **Further analysis:** Investigate trends over time in population changes.
-- **Predictive modeling:** Use regression to predict weight based on size.
-- **Visualization improvements:** Add more detailed graphs.
-
-📌 **This report is part of our SAS project, available in this repository!** 📂
-
----
-
-### 📂 How to Upload This File to GitHub
-1. Navigate to your GitHub repository.
-2. Click on **"Add file" → "Create new file"**.
-3. Name the file `final_analysis.md`.
-4. Copy and paste the **entire Markdown code** above.
-5. Click **Commit changes**.
-
----
-
-### 🎉 Now your GitHub repo has a professional data analysis report! 🚀
-
-Let me know if you need any modifications! 😊📊
